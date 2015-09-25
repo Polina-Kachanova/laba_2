@@ -47,16 +47,17 @@ SQLite Version 3.8.7
 The system interacts with user through GUI. It does not need specific requirements.
 User’s action	Reaction
 Double-click on the icon of the program	Open the program
+![Start page](https://github.com/Polina-Kachanova/laba_2/blob/master/StartPage.png)
 Click on the button “Add new recipe”	Open a new window with fields for entry of information
+![Third page](https://github.com/Polina-Kachanova/laba_2/blob/master/ThirdPage.png)
 Correctly type information and click on the button  “Add”	Return to the start window. Recipe successfully added to the DB
 Incorrectly type information and click on the button  “Add”	Show the error-message
 Click on the button “Delete recipe”	Delete recipe from the DB
 Search for the recipe by name\part of name	Return all recipes with typed combination in its name
+![First page](https://github.com/Polina-Kachanova/laba_2/blob/master/FirstPage.png)
+![Second page](https://github.com/Polina-Kachanova/laba_2/blob/master/SecondPage.png)
 Search for the recipe by ingredients	Return all recipes with typed combination in its ingredients
 Click on the cross icon	Close the program
-
-
-2.1.3 Memory Constraints
 
 2.2  Product Functions 
 
