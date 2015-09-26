@@ -10,12 +10,16 @@ Version: 1.0	Date: (21/09/2015)
 1.	INTRODUCTION
 1.1  Purpose  
 
-The purpose of this project is to make the process of cooking faster by creating extensive database of recipes. User can easily find recipes of all the dishes he can cook using ingredients available.
+The purpose of this project is to make the process of cooking faster by creating extensive database of recipes. User can 
+easily find recipes of all the dishes he can cook using ingredients available.
 
 1.2  Scope 
 
-Software product “LazyCooker” is a kind of Desktop cookbooks. That is why it should perform such functions as storing recipes in database, creating new recipes and finding them.
-Unlike many other analogues, “LazyCooker” is a Desktop cookbook. That means it does not require Internet connection during its work. It is a great benefit because it significantly expands the scope of the product. This software product will be helpful for both professional cookers and users with small skills in this area.
+Software product “LazyCooker” is a kind of Desktop cookbooks. That is why it should perform such functions as storing recipes 
+in database, creating new recipes and finding them.
+Unlike many other analogues, “LazyCooker” is a Desktop cookbook. That means it does not require Internet connection during 
+its work. It is a great benefit because it significantly expands the scope of the product. This software product will be 
+helpful for both professional cookers and users with small skills in this area.
 
 1.3  Definitions, Acronyms, and Abbreviations  
 
@@ -32,8 +36,13 @@ The following subsections describe the general factors that affect the product a
 
 2.1  Product Perspective  
 
-There is a great amount of cookbooks today, both in paper and electronic variants. Electronic cookbooks can be divided into Web cookbooks and Desktop cookbooks. The number of Web cookbooks is much bigger because it is more conveniently for users. New recipes are created every day and practically all of them can be found on different Web sites. However, what should the user do in the area with no Internet connection?  
-Software product “LazyCooker” was created to solve this problem. Of course, it has many analogues. The main disadvantage of these programs is their price. There are practically no free Desktop cookbooks. Another problem is a small number of recipes(less than 1000). “LazyCooker” is intended to edit these omissions.
+There is a great amount of cookbooks today, both in paper and electronic variants. Electronic cookbooks can be divided into 
+Web cookbooks and Desktop cookbooks. The number of Web cookbooks is much bigger because it is more conveniently for users. 
+New recipes are created every day and practically all of them can be found on different Web sites. However, what should the 
+user do in the area with no Internet connection?  
+Software product “LazyCooker” was created to solve this problem. Of course, it has many analogues. The main disadvantage of 
+these programs is their price. There are practically no free Desktop cookbooks. Another problem is a small number of 
+recipes(less than 1000). “LazyCooker” is intended to edit these omissions.
 
 2.1.1 Software Interfaces
 
@@ -70,7 +79,8 @@ The software performs following functions:
 
 2.3  User Characteristics 
 
-Software product “LazyCooker” is oriented on users from all sectors of society. There are no restrictions on educational level, because it has intuitive interface. From technical experience, it is necessary to distinguish using PC on middle level.
+Software product “LazyCooker” is oriented on users from all sectors of society. There are no restrictions on educational level,
+because it has intuitive interface. From technical experience, it is necessary to distinguish using PC on middle level.
 
 2.4 Assumptions and Dependencies
 
@@ -84,13 +94,15 @@ Database – SQLite Browser.
 Static numerical requirements:
 1. The number of terminals to be supported – 1.
 2. The number of simultaneous users to be supported – 1.
-95% of the transactions shall be processed in less than 1 second rather than, an operator shall not have to wait for the transaction to complete.
+95% of the transactions shall be processed in less than 1 second rather than, an operator shall not have to wait for the 
+transaction to complete.
 
 3.2 Software System Attributes
 
 3.2.1 Reliability
 
-Such attribute as reliability is one of the most important because it gives guarantee that software product stably works under certain conditions. It includes: 
+Such attribute as reliability is one of the most important because it gives guarantee that software product stably works under
+certain conditions. It includes: 
 1. The system works equally stable under a variety of operating systems.
 2. The system returns correct output data corresponding to input data.
 3. The time of processing the request do not exceed 1 second.
@@ -98,16 +110,19 @@ Such attribute as reliability is one of the most important because it gives guar
 3.2.2 Availability
 
 
-1. The requirements for system recovery from a failure: the system shall allow users to restart the application after failure without losing the last saved information.   
+1. The requirements for system recovery from a failure: the system shall allow users to restart the application after failure 
+without losing the last saved information.   
 2. The program is available for all users of PC.
 
 3.2.3 Security
 
-This software product is open source. It does not need a high level of security. The only type of protecting data is to restrict communications between some important areas of program and check data integrity for critical variables.
+This software product is open source. It does not need a high level of security. The only type of protecting data is to 
+restrict communications between some important areas of program and check data integrity for critical variables.
 
 3.2.4 Portability
 
-The software product should work equally stable under a variety of operating systems. That is why there are some special requirements:
+The software product should work equally stable under a variety of operating systems. That is why there are some special 
+requirements:
 1. Using portable language (Java).
 2. Using cross-platform graphical library (Swing).
 
