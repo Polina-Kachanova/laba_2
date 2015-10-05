@@ -29,8 +29,7 @@ SQL – structured query language.
 
 1.4  References  
 
-
-2.  The Overall Description  
+2.  THE OVERALL DESCRIPTION  
 
 The following subsections describe the general factors that affect the product and its requirements. 
 
@@ -51,7 +50,7 @@ SQL Server
 Version 3.4.0
 SQLite Version 3.8.7
 
-2.1.2 User Interfaces
+2.1.2 USER INTERFACE
 
 The system interacts with user through GUI. It does not need specific requirements.
 User’s action	Reaction
@@ -87,9 +86,19 @@ because it has intuitive interface. From technical experience, it is necessary t
 Operating system – Windows 7/8, Linux.
 Database – SQLite Browser.
 
-3.  Specific Requirements  
+3.  SPECIFIC REQUIREMENTS 
 
-3.1 Performance Requirements
+3.1 Functional Requirements
+
+Application's function set is represented by the following list of abilities:
+- addinng new recipes.
+- changing recipes.
+- deleting recipes.
+- setting "likes" to recipes.
+- finding recipes by name.
+- finding recipes by ingredients.
+
+3.2 Performance Requirements
 
 Static numerical requirements:
 1. The number of terminals to be supported – 1.
@@ -97,9 +106,9 @@ Static numerical requirements:
 95% of the transactions shall be processed in less than 1 second rather than, an operator shall not have to wait for the 
 transaction to complete.
 
-3.2 Software System Attributes
+3.3 Software System Attributes
 
-3.2.1 Reliability
+3.3.1 Reliability
 
 Such attribute as reliability is one of the most important because it gives guarantee that software product stably works under
 certain conditions. It includes: 
@@ -107,19 +116,18 @@ certain conditions. It includes:
 2. The system returns correct output data corresponding to input data.
 3. The time of processing the request do not exceed 1 second.
 
-3.2.2 Availability
-
+3.3.2 Availability
 
 1. The requirements for system recovery from a failure: the system shall allow users to restart the application after failure 
 without losing the last saved information.   
 2. The program is available for all users of PC.
 
-3.2.3 Security
+3.3.3 Security
 
 This software product is open source. It does not need a high level of security. The only type of protecting data is to 
 restrict communications between some important areas of program and check data integrity for critical variables.
 
-3.2.4 Portability
+3.3.4 Portability
 
 The software product should work equally stable under a variety of operating systems. That is why there are some special 
 requirements:
