@@ -55,7 +55,7 @@ Double-click on the icon of the program	      Open the start page
 Click on the button "sign up"                 Open a new psge with a form to sign up
 Click on the button "Login"                   Open a new page with a form to login
 Click on the button “Add new recipe”	        Open a new page with fields for entry of information
-[2] : https://github.com/Polina-Kachanova/laba_2/blob/master/ThirdPage.png
+[2] : https://github.com/Polina-Kachanova/laba_2/blob/master/AddRecipe.png
 Correctly type information and click on the   Return to the start page. Recipe successfully added to the DB
 button  “Add”
 Incorrectly type information and click on     Show the error-message
@@ -63,12 +63,12 @@ the button  “Add”
 Click on the button "Change recipe"           Change recipe.
 Click on the button “Delete recipe”	          Delete recipe from the DB
 Search for the recipe by name\part of name	  Return all recipes with typed combination in its name
-[3] : https://github.com/Polina-Kachanova/laba_2/blob/master/FirstPage.png
-[4] : https://github.com/Polina-Kachanova/laba_2/blob/master/SecondPage.png 
+[3] : https://github.com/Polina-Kachanova/laba_2/blob/master/AboutRecipe.png
 Search for the recipe by ingredients	        Return all recipes with typed combination in its ingredients
 Click on the cross icon	                      Close the page
 Sign up as admin                              The page shows information about users
 Admin clicks on button "Delete users"         Delete users.
+[4] https://github.com/Polina-Kachanova/laba_2/blob/master/Admin.png
 
 2.2  Product Functions 
 
