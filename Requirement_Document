@@ -1,5 +1,5 @@
 
-Desktop cookbook «LazyCooker»
+Web cookbook «LazyCooker»
 
 Software Requirements Specification
 
@@ -15,11 +15,9 @@ easily find recipes of all the dishes he can cook using ingredients available.
 
 1.2  Scope 
 
-Software product “LazyCooker” is a kind of Desktop cookbooks. That is why it should perform such functions as storing recipes 
-in database, creating new recipes and finding them.
-Unlike many other analogues, “LazyCooker” is a Desktop cookbook. That means it does not require Internet connection during 
-its work. It is a great benefit because it significantly expands the scope of the product. This software product will be 
-helpful for both professional cookers and users with small skills in this area.
+Software product “LazyCooker” is a kind of Web cookbooks. That is why it should perform such functions as storing recipes 
+in database, creating new recipes and finding them. This software product will be helpful for both professional cookers and 
+users with small skills in this area.
 
 1.3  Definitions, Acronyms, and Abbreviations  
 
@@ -37,44 +35,53 @@ The following subsections describe the general factors that affect the product a
 
 There is a great amount of cookbooks today, both in paper and electronic variants. Electronic cookbooks can be divided into 
 Web cookbooks and Desktop cookbooks. The number of Web cookbooks is much bigger because it is more conveniently for users. 
-New recipes are created every day and practically all of them can be found on different Web sites. However, what should the 
-user do in the area with no Internet connection?  
-Software product “LazyCooker” was created to solve this problem. Of course, it has many analogues. The main disadvantage of 
-these programs is their price. There are practically no free Desktop cookbooks. Another problem is a small number of 
-recipes(less than 1000). “LazyCooker” is intended to edit these omissions.
+New recipes are created every day and practically all of them can be found on different Web sites. It's very usefull to have 
+all your favourite recipes in one place.
+Software product “LazyCooker” was created to solve this problem. Of course, it has many analogues. The main problem is a small number of 
+recipes(less than 1000). Another problem is that users have no chance to add thein own recipes. “LazyCooker” is intended to 
+edit these omissions.
 
 2.1.1 Software Interfaces
 
-DB Browser for SQLite
-SQL Server
-Version 3.4.0
-SQLite Version 3.8.7
+IntellijIdea 14.1
+MySQL
 
 2.1.2 USER INTERFACE
 
 The system interacts with user through GUI. It does not need specific requirements.
-User’s action	Reaction
-Double-click on the icon of the program	Open the program
+User’s action	                                Reaction
+Double-click on the icon of the program	      Open the start page
 [1] : https://github.com/Polina-Kachanova/laba_2/blob/master/StartPage.png
-Click on the button “Add new recipe”	Open a new window with fields for entry of information
+Click on the button "sign up"                 Open a new psge with a form to sign up
+Click on the button "Login"                   Open a new page with a form to login
+Click on the button “Add new recipe”	        Open a new page with fields for entry of information
 [2] : https://github.com/Polina-Kachanova/laba_2/blob/master/ThirdPage.png
-Correctly type information and click on the button  “Add”	Return to the start window. Recipe successfully added to the DB
-Incorrectly type information and click on the button  “Add”	Show the error-message
-Click on the button “Delete recipe”	Delete recipe from the DB
-Search for the recipe by name\part of name	Return all recipes with typed combination in its name
+Correctly type information and click on the   Return to the start page. Recipe successfully added to the DB
+button  “Add”
+Incorrectly type information and click on     Show the error-message
+the button  “Add”	
+Click on the button "Change recipe"           Change recipe.
+Click on the button “Delete recipe”	          Delete recipe from the DB
+Search for the recipe by name\part of name	  Return all recipes with typed combination in its name
 [3] : https://github.com/Polina-Kachanova/laba_2/blob/master/FirstPage.png
 [4] : https://github.com/Polina-Kachanova/laba_2/blob/master/SecondPage.png 
-Search for the recipe by ingredients	Return all recipes with typed combination in its ingredients
-Click on the cross icon	Close the program
+Search for the recipe by ingredients	        Return all recipes with typed combination in its ingredients
+Click on the cross icon	                      Close the page
+Sign up as admin                              The page shows information about users
+Admin clicks on button "Delete users"         Delete users.
 
 2.2  Product Functions 
 
 The software performs following functions:
-1. Storing recipes in database.
-2. Adding new recipes to the database.
-3. Deleting recipes from database.
-4. Searching for recipes by name.
-5. Searching for recipes by ingredients.
+1. Sign up
+2. Login
+3. Adding new recipes to the database.
+4. Deleting recipes from database.
+5. Searching for recipes by name.
+6. Searching for recipes by ingredients.
+7. Setting "Likes" to favourite recipes.
+8.Changing recipes.
+9. Delete users (for Admin)
 
 2.3  User Characteristics 
 
@@ -83,26 +90,27 @@ because it has intuitive interface. From technical experience, it is necessary t
 
 2.4 Assumptions and Dependencies
 
-Operating system – Windows 7/8, Linux.
-Database – SQLite Browser.
+Operating system – it supports all operation systems that can run Web browser.
 
 3.  SPECIFIC REQUIREMENTS 
 
 3.1 Functional Requirements
 
 Application's function set is represented by the following list of abilities:
+- sign up.
+- login.
 - addinng new recipes.
 - changing recipes.
 - deleting recipes.
-- setting "likes" to recipes.
+- setting "Likes" to recipes.
 - finding recipes by name.
 - finding recipes by ingredients.
+- deletind users.
 
 3.2 Performance Requirements
 
 Static numerical requirements:
-1. The number of terminals to be supported – 1.
-2. The number of simultaneous users to be supported – 1.
+2. The number of simultaneous users to be supported – 100.
 95% of the transactions shall be processed in less than 1 second rather than, an operator shall not have to wait for the 
 transaction to complete.
 
@@ -132,7 +140,7 @@ restrict communications between some important areas of program and check data i
 The software product should work equally stable under a variety of operating systems. That is why there are some special 
 requirements:
 1. Using portable language (Java).
-2. Using cross-platform graphical library (Swing).
+2. Using flexible framework (Spring).
 
 
 
