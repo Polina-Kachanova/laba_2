@@ -17,16 +17,16 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for LazyCook" enabled="true">
+      <profile default="false" name="Annotation profile for LC" enabled="true">
         <sourceOutputDir name="target\generated-sources\annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="LazyCook" />
+        <module name="LC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="LazyCook" target="1.5" />
+      <module name="LC" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

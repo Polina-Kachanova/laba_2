@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" build-on-make="true" name="LazyCook:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="spring-hibernate-mysql.war">
-      <element id="artifact" artifact-name="LazyCook:war exploded" />
-    </root>
-  </artifact>
-</component>

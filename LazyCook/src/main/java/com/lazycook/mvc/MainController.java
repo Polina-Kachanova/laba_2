@@ -43,7 +43,7 @@ public class MainController {
 	 * Получает все рецепты и показывает их на jsp
 	 * @return the name of the JSP page
 	 */
-	@RequestMapping(value = "/recipes", method = RequestMethod.GET)
+		@RequestMapping(value = "/recipes", method = RequestMethod.GET)
 	public String getRecipes(Model model) {
 
 		logger.debug("Received request to show all recipes");
@@ -58,7 +58,7 @@ public class MainController {
 
 		// This will resolve to /WEB-INF/jsp/recipespage.jsp
 		// Перенаправляет на /WEB-INF/jsp/recipespage.jsp
-		return "recipespage";
+		return "recipePage";
 	}
 
 	/**
