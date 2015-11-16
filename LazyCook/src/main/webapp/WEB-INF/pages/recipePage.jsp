@@ -1,4 +1,4 @@
-<anyxmlelement xmlns:c="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<anyxmlelement xmlns:c="http://java.sun.com/jsp/jstl/core" prefix="c" >
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -16,7 +16,7 @@
     <tr>
         <th>Recipe Name</th>
         <th>Description</th>
-        <th>Id</th>
+        <th>Ingredients</th>
         <th colspan="3"></th>
     </tr>
     </thead>
@@ -27,7 +27,7 @@
         <tr>
             <td><c:out value="${recipe.Name}" /></td>
             <td><c:out value="${recipe.Description}" /></td>
-            <td><c:out value="${recipe.Id}" /></td>
+            <td><c:out value="${recipe.Ingredients}" /></td>
             <td><a href="${editUrl}">Edit</a></td>
             <td><a href="${deleteUrl}">Delete</a></td>
             <td><a href="${addUrl}">Add</a></td>
